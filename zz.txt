@@ -1,0 +1,26 @@
+------------------------------------------
+venv\Scripts\activate
+------------------------------------------
+
+-------------- Chạy Fastapi --------------
+uvicorn app.main:app --reload
+------------------------------------------
+
+
+-------------- Supabase --------------
+- Project API
+Project_URL = "https://vfvvvisxlsrcbdeqadxo.supabase.co"
+API_Key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZmdnZ2aXN4bHNyY2JkZXFhZHhvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTEyNTMzODMsImV4cCI6MjA2NjgyOTM4M30.DXbF78JiyAubIaVPPFbEZ5BwC9GsRZ1ni7D1jGg0wE0"
+service_role = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZmdnZ2aXN4bHNyY2JkZXFhZHhvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MTI1MzM4MywiZXhwIjoyMDY2ODI5MzgzfQ.sLNtVS6mCT7rBMYCBKSOc4lVCh5qzZ7-CWm_ENoUmFw"
+------------------------------------------
+
+-------------- Qdrant --------------
+demo-key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIiwiZXhwIjoxNzUxODU1OTA4fQ.oLzMmoJ7xJpyy6KXpq9toakHn18CuqM3LtZ8YCpwb0w"
+
+curl \
+    -X GET 'https://fdf2fd1d-d7d7-4a3a-b280-e91fcb97055e.europe-west3-0.gcp.cloud.qdrant.io:6333' \
+    --header 'api-key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIiwiZXhwIjoxNzUxODU1OTA4fQ.oLzMmoJ7xJpyy6KXpq9toakHn18CuqM3LtZ8YCpwb0w'
+
+----------------------------------------
+
+

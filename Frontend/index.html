@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chat Client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <div id="auth-container">
+            <div id="login-form">
+                <h1>Đăng nhập</h1>
+                <form id="login-form-element">
+                    <div class="input-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="login-password">Mật khẩu</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit">Đăng nhập</button>
+                </form>
+                <p class="toggle-link">Chưa có tài khoản? <a href="#" id="show-register">Đăng ký ngay</a></p>
+            </div>
+
+            <div id="register-form" class="hidden">
+                <h1>Đăng ký</h1>
+                <form id="register-form-element">
+                    <div class="input-group">
+                        <label for="register-name">Họ và tên</label>
+                        <input type="text" id="register-name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="register-password">Mật khẩu</label>
+                        <input type="password" id="register-password" required>
+                    </div>
+                    <button type="submit">Đăng ký</button>
+                </form>
+                <p class="toggle-link">Đã có tài khoản? <a href="#" id="show-login">Đăng nhập</a></p>
+            </div>
+        </div>
+
+        <div id="chat-container" class="hidden">
+            
+            <div id="chat-sidebar">
+                <h3>Danh sách phiên</h3>
+                <button id="new-session-btn">+ Tạo phiên mới</button>
+                <ul id="session-list">
+                    <!-- Danh sách phiên chat cũ sẽ được thêm động ở đây -->
+                    <!-- <li>
+                    <span class="session-name">Phiên 1</span>
+                    <button class="rename-btn">✏️</button>
+                    <button class="delete-btn">🗑️</button>
+                    </li> -->
+                </ul>
+            </div>
+
+            <div id="chat-main">
+                <div id="session-info">Chưa có phiên nào được chọn</div>
+                
+                    <p id="user-name-display">Xin chào!</p>
+                <!-- ... -->
+                
+
+                <div id="chat-log">
+                    <!-- Tin nhắn sẽ được thêm vào đây -->
+                </div>
+
+                <form id="chat-form">
+                    <!-- <input type="file" id="file-input" class="file-input"> -->
+                    <label for="file-input" class="file-label">📎</label>
+                    <input type="file" id="file-input" class="file-input" style="display:none;">
+                    <input type="text" id="message-input" placeholder="Nhập tin nhắn..." required>
+                    <button type="submit" id="send-btn">Gửi</button>
+                    
+                </form>
+            </div>
+</div>
+
+            
+        </div>
+        
+        <div id="status"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
